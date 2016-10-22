@@ -1,5 +1,5 @@
-# MODxFLAT-Theme 2.5.1
-22/07/2016
+# MODxFLAT-Theme 2.6
+22/10/2016
 
 http://www.tattoocms.it/manager-templates/modxflat-evolution-manager-theme.html
 
