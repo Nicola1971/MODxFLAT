@@ -652,7 +652,6 @@ input.submit {
   width: auto;
 }
 
-
 /* -------------------------[ Misc stuff ]--- */
 
 .sectionBody fieldset {
@@ -1575,20 +1574,18 @@ a.hometblink:hover {
 
 .dynamic-tab-pane-control .tab-row .tab {
   color: #313131;
-  font-size: 1em;
+  font-size: 1,2em;
   cursor: pointer;
   display: inline;
   margin: 3px 2px 1px 0;
   float: left;
-  padding: 4px 12px 5px 12px;
+  padding: 4px 12px 14px 12px;
   z-index: 1;
   position: relative;
   top: 0;
   border: 1px solid #658f1a;
   background: none repeat scroll 0 0 #66901b;
   text-shadow: 0px -1px 0px #2B5F0C;
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
   background: -moz-linear-gradient(#8aae4b, #66901b);
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#8aae4b), to(#66901b));
@@ -1613,12 +1610,10 @@ a.hometblink:hover {
   color: #333;
   z-index: 9;
   top: 0;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
   border-width: 1px;
   border-bottom-style: solid;
   border-color: #ffcc72 #AAA #FFF #AAA;
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
   border-width: 1px 1px 0;
   background: #f9f9f9;
@@ -1681,6 +1676,7 @@ a.hometblink:hover {
 
 
 /*modxflat elements list */ 
+
 .tab-pane ul{
 margin:0 20px 0 0}
 .tab-pane li{
@@ -2963,6 +2959,10 @@ font-size:1.2em;
 
 .dynamic-tab-pane-control.tab-pane {
   margin-top: 10px;
+  background: #fbfbfb;
+  border-radius:3px 3px 0 0; 
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+ /** border:1px solid #c6c6c6; **/
 }
 
 .sectionBody > .dynamic-tab-pane-control.tab-pane,
@@ -2971,9 +2971,15 @@ font-size:1.2em;
 }
 
 .dynamic-tab-pane-control .tab-row .tab,
-.dynamic-tab-pane-control .tab-row .tab span {
+.dynamic-tab-pane-control .tab-row .tab span,
+.dynamic-tab-pane-control .tab-row .tab span:after {
   color: #333;
   font-size: 13px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+
+
 }
 .dynamic-tab-pane-control .tab-row .tab span i {
   color: #3697CD;
@@ -2981,33 +2987,71 @@ font-size:1.2em;
 }
 .dynamic-tab-pane-control .tab-row .tab {
   position: relative;
-  margin: 3px 2px 1px 0;
-  padding: 7px 12px 8px 12px;
-  background: transparent;
+  border-radius: 0px 0px 0 0!important;
+  margin: 0px 2px 0px 0px;
+  padding: 11px 14px 14px 14px;
   text-shadow: none;
-  border:1px solid #c6c6c6; 
-  background:#ffffff; 
-  border-radius:4px 4px 0 0!important; 
+  border:none; 
+  background: transparent;
+  border-right:1px solid #f1f1f1;
+
+ /** border-radius:4px 4px 0 0!important; **/
 }
 
 .dynamic-tab-pane-control .tab-row .tab.hover {
-  background:#f9f9f9; 
+ border-radius: 0px 0px 0 0!important;
+
+ background: #eeeeee;
+}
+.dynamic-tab-pane-control .tab-row .tab.hover span:after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+	margin-left: -10px;
+	border-width: 7px;
+	border-top-color: #eeeeee;
+}
+.dynamic-tab-pane-control .tab-row .tab.selected{
+  padding: 11px 14px 12px 14px;
+}
+.dynamic-tab-pane-control .tab-row .tab.selected span,
+.dynamic-tab-pane-control .tab-row .tab.selected.hover span,
+.dynamic-tab-pane-control .tab-row .tab.selected span i,
+.dynamic-tab-pane-control .tab-row .tab.selected.hover span i 
+ {
+  color: #FFF;
+  background: transparent;
+
 }
 
-.dynamic-tab-pane-control .tab-row .tab.selected span,
-.dynamic-tab-pane-control .tab-row .tab.selected.hover span {
-  color: #3697CD;
+.dynamic-tab-pane-control .tab-row .tab.selected span:after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+	margin-left: -10px;
+	border-width: 7px;
+	border-top-color: #499bea;
 }
 .dynamic-tab-pane-control .tab-row .tab.selected,
 .dynamic-tab-pane-control .tab-row .tab.selected.hover {
-  padding-bottom: 6px;
-  border-color:#499bea #c6c6c6 #f9f9f9 #c6c6c6; 
-  border-style:solid; 
-  border-width:1px 1px 2px 1px; 
-  background: #f9f9f9;
-  background-color: #f9f9f9;
-  box-shadow:0 6px 0 -1px #f9f9f9,0 1px 6px rgba(0,0,0,0.1)
-  /**box-shadow: 0 -3px 0 #3697cd,-1px 0 0 transparent;**/
+ border-radius: 0px 0px 0 0!important;
+  border-color:#499bea; 
+  border:none!important; 
+  background: #499bea;
+  background-color: #499bea;
+  color: #FFF;
+  /**box-shadow:0 6px 0 -1px #f9f9f9,0 1px 6px rgba(0,0,0,0.1)
+  box-shadow: 0 -3px 0 #3697cd,-1px 0 0 transparent;**/
 }
 
 
@@ -3019,20 +3063,6 @@ font-size:1.2em;
   display: block;
   right: 0;
 }
-.dynamic-tab-pane-control .tab-row .tab.selected:after,
-.dynamic-tab-pane-control .tab-row .tab.selected.hover:after {
-  border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
-  top: -3px;
-  bottom: 1px;
-  z-index: -1;
-}
-
-.dynamic-tab-pane-control .tab-row .tab.selected:before {
-  background: #f9f9f9;
-  top: 90%;
-  bottom: -4px;
-}
 
 .dynamic-tab-pane-control .tab-row .tab.hover,
 .dynamic-tab-pane-control .tab-row .tab.hover span  {
@@ -3042,9 +3072,11 @@ font-size:1.2em;
 .tab-page,
 .dynamic-tab-pane-control .tab-page {
   border: 0 none;
-border:1px solid #c6c6c6; 
-border-radius:4px 4px 0 0; 
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+  border-top:1px solid #dcdcdc; 
+  background: #FFF;
+
+/**border-radius:0px 0px 0 0; 
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);***/
 }
 
 .sectionHeader {
@@ -3156,15 +3188,16 @@ border-radius:4px 4px 0 0;
 
 input[type="button"],
 input[type="submit"] {
-  background: #ededed;
+  background: #3697CD;
   border: 1px solid #3697cd;
   border-radius: 3px !important;
+  color: #fff;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background: #3697CD;
-  border: 1px solid #3697CD;
+  background: #3189ba;
+  border: 1px solid #3189ba;
   color: #fff;
 }
 
@@ -3430,12 +3463,21 @@ table.actionButtons .searchtext {
 
 .userprofiletable {margin-bottom:-20px;}
 
+.treeframebody .tab-pane
+{background: transparent;}
 .treeframebody .tab-row h2.tab
 {
+border-radius: 4px 4px 0 0!important;
 background: #232323!important;
 background-color: #232323!important;
 border:0;
-  filter:none;}
+padding: 4px 4px 5px 4px;
+margin-bottom: 3px!important;;
+filter:none;
+  -moz-transition: none .2s ease-in;
+  -o-transition: none .2s ease-in;
+  -webkit-transition: none .2s ease-in;
+  }
 .treeframebody .tab-row h2.tab span
 {color: #3697CD;}
 .treeframebody .tab-page, .treeframebody .tab-row h2.tab.selected span, .treeframebody .tab-row h2.tab.selected.hover
@@ -3443,25 +3485,40 @@ border:0;
 background-color: #333!important;
 border:0;}
 
-.treeframebody .tab-row h2.tab.selected
+.treeframebody .tab-row h2.tab.selected,
+.treeframebody  .tab-row h2.tab.selected.hover
 {
+border-radius: 4px 4px 0 0!important;
+padding: 4px 4px 5px 4px;
 background: #333!important;
 background-color: #333!important;
 box-shadow: none;
 border:0
-
+}
+.treeframebody .tab-row h2.tab.selected i
+{
+padding-bottom: -6px;
+background: #333!important;
 }
 .treeframebody  .tab-row .tab.selected:before
 {
   background: #333;
   top: 90%;
-  bottom: -5px;
+  bottom: -6px;
 }
 .treeframebody  .tab-row .tab.selected.hover::before 
 {
   background: #333;
   top: 90%;
-  bottom: -5px;
+  bottom: -6px;
+}
+.treeframebody  .tab-row .tab.hover {
+   border-radius: 4px 4px 0 0!important;
+	padding: 4px 4px 4px 4px;
+}
+.treeframebody  .tab-row .tab.hover span:after ,
+.treeframebody  .tab-row .tab.selected span:after {
+	border: 0px;
 }
 .treeframebody .tab-pane input.form-control 
 {
