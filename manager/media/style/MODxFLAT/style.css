@@ -1702,29 +1702,28 @@ margin:4px 0px 0px -4px;
 list-style:none; 
 display:block; 
 background:#499bea; 
-border:1px solid #a9a9a9; 
+border:1px solid #499bea; 
 box-shadow:2px 2px 15px #eaeaea; 
 -moz-box-shadow:2px 2px 15px #eaeaea; 
 -webkit-box-shadow:2px 2px 20px #eaeaea}
 
 .tab-pane ul li ul{
 padding:0px; 
-margin:1px 0 14px -6px; 
+margin:0px 0 14px -6px; 
 list-style-type:none}
 .tab-pane ul li ul li:hover{
 background: #f9f9f9;}
 .tab-pane ul li ul li{
 padding:3px 0 3px 4px;
 list-style:none;
-margin:0 0 1px 2px; 
+margin:0 0 0px 2px; 
 background:#ffffff; 
-border: 1px solid #e7e7e7; 
--webkit-border-radius:2px; 
--moz-border-radius:2px; 
-border-radius:2px; 
+border: 1px solid #efefef; 
+border-top:none;
 -webkit-background-clip:padding; 
 -moz-background-clip:padding; 
 background-clip:padding-box}
+
 .tab-pane ul li ul li:before{
     font-family: FontAwesome;
     font-style: normal;
@@ -1750,7 +1749,29 @@ div#tabPlugins.tab-page ul li ul li:before{
 div#tabCategory.tab-page ul li ul li:before{
     content:'\f00a';
 }
-	.rtl ul {
+.tab-pane li > ul > li > span > a > small:after{
+    content:'\f044';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    color: #eaeaea;
+    margin-left:5px;
+    background-color: transparent;
+    padding:0px 4px;border-radius:2px;
+    /*border: 1px solid #eaeaea;*/
+    margin-top: -2px;
+    float:right;*/
+    /*position:absolute; right:50px;*/
+      -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+} 
+.tab-pane li > ul > li > span > a > small:hover:after {
+color: #6dbe3e;
+border-color: #6dbe3e;	
+}
+.rtl ul {
 		margin: 0 10px 0 20px;
 	}
 .screen {
@@ -3135,18 +3156,18 @@ font-size:1.2em;
 .actionButtons li.primary a, 
 .actionButtons a.primary {
   color: #fff;
-  background: #32AB9A;
-  border-color: #32AB9A;
+  background: #5cb85c;
+  border-color: #5cb85c;
 }
 .actionButtons li.primary a:hover, 
 .actionButtons a.primary:hover {
-  background: #35baa8;
-  border-color: #35baa8;
+  background: #449b45;
+  border-color: #449b45;
 }
 .actionButtons li.primary a:active, 
 .actionButtons a.primary:active {
-  background: #32AB9A;
-  border-color: #32AB9A;
+  background: #449b45;
+  border-color: #449b45;
 }
 .actionButtons img {
   display: none;
