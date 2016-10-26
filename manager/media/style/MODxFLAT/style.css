@@ -3468,8 +3468,8 @@ table.actionButtons .searchtext {
 .treeframebody .tab-row h2.tab
 {
 border-radius: 4px 4px 0 0!important;
-background: #232323!important;
-background-color: #232323!important;
+background: #232323;
+background-color: #232323;
 border:0;
 padding: 4px 4px 5px 4px;
 margin-bottom: 3px!important;;
@@ -3478,11 +3478,12 @@ filter:none;
   -o-transition: none .2s ease-in;
   -webkit-transition: none .2s ease-in;
   }
+#tabDoc::before {display:none; background: #232323!important;}
 .treeframebody .tab-row h2.tab span
 {color: #3697CD;}
 .treeframebody .tab-page, .treeframebody .tab-row h2.tab.selected span, .treeframebody .tab-row h2.tab.selected.hover
-{background: #333!important;
-background-color: #333!important;
+{background: #333;
+background-color: #333;
 border:0;}
 
 .treeframebody .tab-row h2.tab.selected,
@@ -3498,7 +3499,7 @@ border:0
 .treeframebody .tab-row h2.tab.selected i
 {
 padding-bottom: -6px;
-background: #333!important;
+background: transparent!important;
 }
 .treeframebody  .tab-row .tab.selected:before
 {
@@ -3515,6 +3516,7 @@ background: #333!important;
 .treeframebody  .tab-row .tab.hover {
    border-radius: 4px 4px 0 0!important;
 	padding: 4px 4px 4px 4px;
+	background: transparent;
 }
 .treeframebody  .tab-row .tab.hover span:after ,
 .treeframebody  .tab-row .tab.selected span:after {
