@@ -2661,6 +2661,7 @@ input#dateto:focus.DatePicker {
 
 /* normalize some td paddings */
 
+
 #tabTemplate tbody td,
 .sectionBody td,
 .sectionBody th {
@@ -2679,19 +2680,26 @@ input#dateto:focus.DatePicker {
 
 .sectionBody .displayparams th,
 .sectionBody .displayparams td {
-  padding: 2px 4px;
+  padding: 4px 4px;
 }
 
 .sectionBody .displayparams thead td,
 .sectionBody .permissiongroup thead td {
   border-top: none;
 }
-
+#displayparams table{
+  background: #fff;
+}
+#displayparams table tbody td {
+  border-bottom: 1px dotted #d3d3d3;
+}
 .sectionBody .permissiongroup input,
 .sectionBody .permissiongroups input {
   width: 200px;
 }
-
+td#displayparams > table.displayparams {
+border: none;
+}
 
 /* replace warning red color in tabs */
 
@@ -3134,12 +3142,12 @@ font-size:1.2em;
 .actionButtons a.primary, 
 .actionButtons a.default {
   text-shadow: none;
-  background: #444;
+  background: #fff;
   filter: none;
-  color: #fff;
+  color: #555;
   border-width: 1px;
   border-style: solid;
-  border-color: #444;
+  border-color: #E4E4E4;
   border-radius: 3px !important;
   /*box-shadow: 0 0 0 1px #E4E4E4;*/
   box-shadow: none;
@@ -3155,8 +3163,8 @@ font-size:1.2em;
   transition: none;
 }
 .actionButtons a:active {
-  background-color: #3189ba;
-  border-color: #3189ba;
+  background-color: #499bea;
+  border-color: #499bea;
 }
 .actionButtons li.primary a, 
 .actionButtons a.primary {
@@ -3222,15 +3230,15 @@ input[type="submit"] {
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background: #3189ba;
-  border: 1px solid #3189ba;
+  background: #499bea;
+  border: 1px solid #499bea;
   color: #fff;
 }
 
 input[type="button"]:active,
 input[type="submit"]:active {
-  background: #3189ba;
-  border: 1px solid #3189ba;
+  background: #499bea;
+  border: 1px solid #499bea;
 }
 
 form select,
