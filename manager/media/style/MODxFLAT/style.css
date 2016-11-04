@@ -2134,7 +2134,8 @@ ul.actionButtons {
 }
 
 .actionButtons a {
-  border: 1px solid #BBB;
+  border: 1px solid #444;
+  background-color: #444;
   border-radius: 3px 3px 3px 3px;
   color: #333;
   font-weight: bold;
@@ -2147,10 +2148,6 @@ ul.actionButtons {
   -moz-box-shadow: 1px 1px 2px #ccc;
   -webkit-box-shadow: 1px 1px 2px #ccc;
   box-shadow: 1px 1px 2px #ccc;
-  background: -moz-linear-gradient(#FFFFFF, #E0E0E0);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#E0E0E0));
-  background: -o-linear-gradient(#FFFFFF, #E0E0E0);
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#E0E0E0);
   zoom: 1;
 }
 
@@ -2163,10 +2160,6 @@ ul.actionButtons {
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: .3s ease;
-  background: -moz-linear-gradient(#FFFFFF, #F5F5F5);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#F5F5F5));
-  background: -o-linear-gradient(#FFFFFF, #F5F5F5);
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#F5F5F5);
   zoom: 1;
   text-decoration:none !important;
 }
@@ -3022,7 +3015,7 @@ font-size:1.2em;
 .dynamic-tab-pane-control .tab-row .tab {
   position: relative;
   border-radius: 0px 0px 0 0!important;
-  margin: 0px 2px 0px 0px;
+  margin: 0px 1px 0px 0px;
   padding: 11px 14px 14px 14px;
   text-shadow: none;
   border:none; 
@@ -3142,12 +3135,12 @@ font-size:1.2em;
 .actionButtons a.primary, 
 .actionButtons a.default {
   text-shadow: none;
-  background: #fff;
+  background: #444;
   filter: none;
-  color: #555;
+  color: #fff;
   border-width: 1px;
   border-style: solid;
-  border-color: #E4E4E4;
+  border-color: #444;
   border-radius: 3px !important;
   /*box-shadow: 0 0 0 1px #E4E4E4;*/
   box-shadow: none;
@@ -3184,6 +3177,17 @@ font-size:1.2em;
 }
 .actionButtons img {
   display: none;
+}
+
+#displayparams .actionButtons a {
+  background: #fff;
+  border-color: #dedede;
+  color: #666 !important;
+}
+#displayparams .actionButtons a:hover {
+  background: #edeaea;
+  border-color: #d1d1d1;
+  color: #444 !important;
 }
 #treePane .actionButtons img {
   display: inline;
