@@ -3568,6 +3568,14 @@ background: transparent!important;
 #treePane span.panel-title > a[aria-expanded="true"] {
 	color: #fff;
 }
+#treePane .tab-page .actionButtons a {  
+  background: #232323;
+  border: 1px solid #232323;
+  color: #fff;}
+#treePane .tab-page .actionButtons a:hover {  
+  background: #499bea;
+  border: 1px solid #499bea;
+  color: #fff;}
 
 .dashboard a.btn.btn-default.btn-xs.panel-hide {
    padding:6px 8px;
