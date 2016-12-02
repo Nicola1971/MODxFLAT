@@ -1,4 +1,4 @@
-# MODxFLAT-Theme 2.6
+# MODxFLAT-Theme 3.0
 22/10/2016
 
 http://www.tattoocms.it/manager-templates/modxflat-evolution-manager-theme.html
@@ -16,8 +16,10 @@ https://github.com/Nicola1971/MODxFLAT-Colors
 
 # Updates
 
+## 3.0
+* new Evolution 1.2 release and restyle
+
 ## 2.5
-* form-switch in document editing instead checkbox
 * manage files and images tree buttons
 * various css improvements
 
