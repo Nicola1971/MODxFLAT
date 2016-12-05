@@ -3603,13 +3603,7 @@ background: transparent!important;
 }
 }
 /* NU Context Menu */
-html > body > div.nu-context-menu {
-  background: rgba(255, 255, 255, 0.98); 
-  margin: 0!important;
-  padding: 0px!important;
-  border-top: 1px solid #232323 !important;
-  border-radius: 4px!important;
-}
+
 
 .nu-context-menu ul {
     margin: 2px 0 0;
@@ -3637,4 +3631,12 @@ html > body > div.nu-context-menu {
 .nu-context-menu-title {
     color:#499bea;
     font-weight:bold;
+}
+.nu-context-menu {
+    background-clip: border-box;
+  background: rgba(255, 255, 255, 0.98); 
+  margin: 0!important;
+  padding: 0px!important;
+      border-top:1px solid rgba(0,0,0,0.10) !important;;
+  border-radius: 4px!important;
 }
