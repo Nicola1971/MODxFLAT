@@ -12,16 +12,11 @@
 	font-size: 100.01%; /* avoids obscure font-size bug */
 	line-height: 1.5; /* http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/ */
 	font-family: Tahoma, Verdana, Segoe, sans-serif; !important; 
-	font-family: Arial, Tahoma, Helvetica, sans-serif;height: 100%;color: #333;}
+	font-family: Arial, Tahoma, Helvetica, sans-serif;height: 100%;color: #fff;}
     body, html {
     height: 100%;
     background-repeat: no-repeat;
     background-color: #499bea;
-    background-image: -webkit-linear-gradient(bottom, #499bea 0%, #000 100%);
-    background-image: -moz-linear-gradient(bottom, #499bea 0%, #000 100%);
-    background-image: -o-linear-gradient(bottom, #499bea 0%, #000 100%);
-    background-image: -ms-linear-gradient(bottom, #499bea 0%, #000 100%);
-    background-image: linear-gradient(bottom, #499bea 0%, #000 100%);
 }
     .warning{color: #821517;font-weight: bold;}
     .success{color: #090;font-weight: bold;}
@@ -35,8 +30,7 @@
     padding: 2px 3px 2px 18px;
 	}
 
-   .sectionHeader a,.sectionHeader a:active,.sectionHeader a:visited,.sectionHeader a:link {
-    color: #fafafa;text-decoration: none;
+   .sectionHeader a {color: #fff;text-decoration: none;
     text-shadow: #1a1a1a 1px 1px 0;}    
     img.loginCaptcha {border: 1px solid #039;width: 148px;height: 60px;}
     label {display: block;font-weight: normal; font-size: 15px;}
@@ -56,13 +50,14 @@
 	border: 1px solid #9bc747;
 	background: #9bc747;
     border-radius: 3px;
-        width:100%;
-}
+    width:100%;
+    }
 	input.login:hover {
 		background: #82bd42;
 
 	}
-    input#FMP-email {width: 96%;background: #fff;border:1px solid #ccc;padding:8px; 	-ms-border-radius:3px;
+    div.caption {display:block; margin:10px 0;}
+    input#FMP-email, .caption input {width: 96%;background: #fff;border:1px solid #ccc;padding:8px; 	-ms-border-radius:3px;
 	-o-border-radius:3px;
 	border-radius:3px;
     font-size: 16px;}
@@ -81,15 +76,13 @@
 	border: 1px solid #2683dd;
 	background: #2683dd;
 }
-    #mx_loginbox a {color: #B2B2B2;}
-    .notice {width: 100%;padding: 5px;border: 1px solid #eee;background-color: #F4F4F4;color: #707070;}
+    #mx_loginbox a {color: #fff;}
+    .notice {width: 100%;padding: 5px;border: 1px solid #eee;background-color: #F4F4F4;color: #ffffff;}
     #preLoader {position: absolute;z-index: 50000;width: 100%;height: 100%;text-align: center;vertical-align: middle;}
-    .preLoaderText {background-color: #fff;width: 300px;height: 150px;padding: 50px;border: 1px solid #039;}
-	.loginMessage {font-size:11px;color: #999;padding-top: 20px;}
-    .logo {width: 170px;margin: 30px auto 0 auto; }
+   	.loginMessage {font-size:11px;color: #fff;padding-top: 20px;}
     #mx_loginbox {width: 460px;
-        background-color: rgba(0, 0, 0, 0.2);
-        color: #FFF;
+     background-color: rgba(0, 0, 0, 0.4);
+     color: #FFF;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
@@ -236,9 +229,10 @@
             <input type="text" class="text" name="username" id="username" tabindex="1" value="[+uid+]" />
             <label><i class="fa fa-key fa-lg"></i> [+password+] </label>
             <input type="password" class="text" name="password" id="password" tabindex="2" value="" />
-            <p class="caption">[+login_captcha_message+]</p>
+            <div class="caption"><p>[+login_captcha_message+]</p>
             <div>[+captcha_image+]</div>
             [+captcha_input+]
+                </div>
             <input type="checkbox" id="rememberme" name="rememberme" tabindex="4" value="1" class="checkbox" [+remember_me+] /><label for="rememberme" style="cursor:pointer">[+remember_username+]</label>
               <input type="submit" class="login" id="submitButton" value="[+login_button+]" />
             <!-- anything to output before the login box via a plugin ... like the forgot password link? -->
