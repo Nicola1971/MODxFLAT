@@ -3881,7 +3881,7 @@ background: transparent!important;
    padding:6px 8px;
 	background: transparent;
 	border: none;
-	color: #FFF;
+	color: #FFF!important;
 }
 }
 /* NU Context Menu */
