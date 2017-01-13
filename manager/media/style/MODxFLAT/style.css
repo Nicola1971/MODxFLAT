@@ -2309,6 +2309,10 @@ form#mutate .inputBox {
   width: 93%;
 }
 
+form#mutate input[name="ta"].inputBox {
+  width: 70%;
+}
+
 form#mutate select.inputBox {
   margin-right: 5px;
 }
@@ -2884,6 +2888,21 @@ form select {
   width: 250px;
   border-color: rgba(255,255,255,0.5);
   text-align: left;
+}
+::-webkit-input-placeholder {
+   color: #dedede;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #dedede;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #dedede;  
+}
+
+:-ms-input-placeholder {  
+   color: #dedede;  
 }
 
 /*
