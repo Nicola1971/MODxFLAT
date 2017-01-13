@@ -51,6 +51,7 @@
 	background: #9bc747;
     border-radius: 3px;
     width:100%;
+    -webkit-appearance: none;
     }
 	input.login:hover {
 		background: #82bd42;
