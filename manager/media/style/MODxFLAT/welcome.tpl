@@ -13,7 +13,7 @@
         <div class="wm_logo">
           <img src="media/style/[(manager_theme)]/images/misc/logo-dashboard.png" alt="[%logo_slogan%]" />
         </div>
-        <h1>[(site_name:encode_js)]</h1>
+        <h1>[(site_name)]</h1>
       </div>
     </div>
   </div-->
@@ -24,6 +24,14 @@
         [+logout_reminder_msg+]
       </div>
   </div>
+
+  <!-- logout reminder -->
+  <div id="multiple_sessions" style="display:[+show_multiple_sessions+]">
+      <div class="widget-wrapper alert alert-warning">
+        [+multiple_sessions_msg+]
+      </div>
+  </div>
+
   <!-- alert -->
   <div style="display:[+config_display+]">
     <div class="widget-wrapper alert alert-warning">
@@ -221,7 +229,7 @@
   var localdata_position = JSON.parse(localStorage.getItem('[(site_name:encode_js)]-evodashboard.grid'));
   var localdata_states = JSON.parse(localStorage.getItem('[(site_name:encode_js)]-evodashboard.states'));
 
-  fnCreateGridster('[(site_name:encode_js)]-evodashboard.grid', '[[(site_name:encode_js)]-evodashboard.states');
+  fnCreateGridster('[(site_name:encode_js)]-evodashboard.grid', '[(site_name:encode_js)]-evodashboard.states');
 </script>
 
 <script type="text/javascript">        

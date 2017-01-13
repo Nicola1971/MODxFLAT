@@ -1,14 +1,4 @@
-/* -------------------------[ Neutralize styles, fonts and viewport ]--- */
-
 * html {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-
-/* for IE6 */
-
-*+html {
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -30,19 +20,75 @@ img {
 }
 
 html {
-  font-size: 100.5%;
+  font-size: 100.01%;
   line-height: 1.5;
-  color: #111;
+  color: #333;
 }
 
 body {
-  font-family: Arial, HelveticaNeue, "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
-  font-size: 62.5%;
-  font-size: 68.75%;
-  font-size: 75%;
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
   height: 100%;
-  color: #333333;
-  background: #eeeeee url(images/body.jpg);
+  color: #333;
+  background: #eeeeee;
+}
+
+/* For Arabic Font */
+html[lang="ar"] body,
+html[lang="ary"] body,
+html[lang="azb"] body,
+html[lang="fa-IR"] body,
+html[lang="haz"] body,
+html[lang="ps"] body,
+html[lang="ur"] body {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* For Chinese Font */
+html[lang="zh"] body{
+  font-family: "PingFang SC", "Microsoft JhengHei", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", Helvetica, sans-serif;
+}
+
+/* For Devanagari Font */
+html[lang="bn-BD"] body,
+html[lang="hi-IN"] body,
+html[lang="mr-IN"] body {
+    font-family: Arial, sans-serif;
+}
+
+/* For Greek Font */
+html[lang="el"] body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* For Gujarati Font */
+html[lang="gu-IN"] body {
+    font-family: Arial, sans-serif;
+}
+
+/* For Hebrew Font */
+html[lang="he"] body {
+  font-family: "Arial Hebrew", Arial, sans-serif;
+}
+
+/* For Japanese Font */
+html[lang="ja"] body {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+/* For Korean font */
+html[lang="ko-KR"] body {
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", Dotum, sans-serif;
+}
+
+/* For Thai Font */
+html[lang="th"] body {
+    font-family: "Sukhumvit Set", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* For Arabic Font */
+html[lang="fa"] body {
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 img,
@@ -2263,6 +2309,10 @@ form#mutate .inputBox {
   width: 93%;
 }
 
+form#mutate input[name="ta"].inputBox {
+  width: 70%;
+}
+
 form#mutate select.inputBox {
   margin-right: 5px;
 }
@@ -2838,6 +2888,21 @@ form select {
   width: 250px;
   border-color: rgba(255,255,255,0.5);
   text-align: left;
+}
+::-webkit-input-placeholder {
+   color: #dedede;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #dedede;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #dedede;  
+}
+
+:-ms-input-placeholder {  
+   color: #dedede;  
 }
 
 /*
@@ -3509,7 +3574,243 @@ table.actionButtons .searchtext {
   color: #777;
 }
 
+
 .userprofiletable {margin-bottom:-20px;}
+
+.btn-small { padding:2px 4px !important; font-size:11px !important; }
+.relative { position:relative; }
+
+.modx-alert { display:block; margin:60px 10px 10px 10px; padding:1em; }
+.modx-alert.alert-error { background-color:#ffd0d0; border:1px solid #ff0000; color:#000; }
+
+tr.userIdle td { color:#aaa; }
+tr.userIdle td strong:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    color: #aaa;
+    padding: 0 5px 0 0;
+    content:'\f017';
+}
+#modxonline_widget td strong:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    color: #3d5764;
+    padding: 0 5px 0 0;
+    content:'\f2be';
+}
+
+#modxonline_widget td strong.userMultipleSessions:before {
+    color: #bf4949;
+    content:'\f2bd';
+}
+#modxonline_widget tr.userIdle td strong.userMultipleSessions:before {
+    color: #bf4949;
+    content:'\f017';
+}
+/* c-roleslist */
+.c-roleslist {
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+
+.c-roleslist-name {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.c-roleslist-hyphen {
+  display: none;
+}
+
+.c-roleslist-description {
+  color: #666;
+}
+
+.c-roleslist-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.c-roleslist-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom-width: 0;
+}
+
+.c-roleslist-item--admin {
+  font-style: italic;
+}
+/* codemirror */
+
+.CodeMirror pre {
+  font-size: 12px !important;
+}
+
+
+/*Manage Files*/
+#ManageFiles i.fa, #ManageFiles span.fa {color: #39515d;}
+#ManageFiles i.fa.FilesTopFolder {color: #80969c;font-size: 19px!important;}
+#ManageFiles i.fa.FilesFolder {font-size: 19px!important; color: #80969c; margin-right: 4px;}
+#ManageFiles i.fa.FilesDeletedFolder {font-size: 19px!important; color: #e2e2e2; margin-right: 4px;}
+#ManageFiles i.fa.FilesPage  {color: #80969c; margin-right: 4px;}
+#FilesTable {border-collapse:collapse;}
+#FilesTable tr, #FilesTable td {padding:2px !important;}
+#FilesTable td {border-bottom: 1px dotted #e2e2e2 !important;}
+#FilesTable th {background: #fff;border: none;}
+
+/*BS button*/
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+ /* line-height: 1.42857143;*/
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=45);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .45;
+}
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+.btn-default {
+  font-size: 14px;
+  color: #3d5764 !important;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #333;
+  background-color: #fff;
+  border-color: #3697CD;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #fff;
+  border-color: #3697CD;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 3px 5px;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+
+
+/* Flat plugins styles*/
 
 .treeframebody .tab-pane
 {background: transparent;}
@@ -3599,7 +3900,7 @@ background: transparent!important;
    padding:6px 8px;
 	background: transparent;
 	border: none;
-	color: #FFF;
+	color: #FFF!important;
 }
 }
 /* NU Context Menu */
