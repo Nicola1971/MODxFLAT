@@ -3140,7 +3140,7 @@ font-size:1.2em;
 .panel-title > a:hover {
     text-decoration: none;
     color:#FFF;
-    background: #2f8feb;
+    opacity: 0.85;
 }
 
 /* category icons in manage elements */ 
