@@ -7,6 +7,9 @@ http://www.tattoocms.it/manager-templates/modxflat-evolution-manager-theme.html
 
 # Updates
 
+## 3.1.2.2
+* updated for Evolution 1.2.2 
+
 ## 3.0
 * new Evolution 1.2 release and restyle
 
