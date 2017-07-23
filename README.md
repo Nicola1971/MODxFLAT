@@ -1,4 +1,4 @@
-# MODxFLAT-Theme 3.1.2.1
+# MODxFLAT-Theme 3.1.2.2 beta
 
 
 http://www.tattoocms.it/manager-templates/modxflat-evolution-manager-theme.html
