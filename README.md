@@ -1,3 +1,8 @@
+# THIS PROJECT IS DEPRECATED
+
+New version for evolution cms 1.4 here:
+https://github.com/Nicola1971/EvoFLAT
+
 # MODxFLAT-Theme 3.1.2.2 beta
 
 
